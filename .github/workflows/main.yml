@@ -1,4 +1,4 @@
-name: daily-devcard
+name: DevCard
 on:
   workflow_dispatch:
   push:
@@ -12,7 +12,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: devcard
+      - name: DevCard
         uses: dailydotdev/action-devcard@3.0.0
         with:
           user_id: ${{ secrets.USER_ID }}
